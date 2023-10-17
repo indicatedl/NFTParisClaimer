@@ -72,7 +72,7 @@ def get_session_token(proxy, session, private_key, i):
                                 sleep(3)
                                 continue
                             break
-                    if 'no balance' in resp.text:
+                    elif 'no balance' in resp.text:
                         logger.error(f"{i}) No ETH mainnet TX/balance. Wallet rejected!")
                         return False
                     else:
