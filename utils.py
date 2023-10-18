@@ -77,8 +77,11 @@ def get_session_token(proxy, session, private_key, i):
                         return False
                     else:
                         logger.error(f"{i}) Error get_session_token request: {resp.status_code, resp.text}")
-                sleep(3)
-                continue
+                        sleep(3)
+                        continue
+                else:
+                    sleep(3)
+                    continue
             if 'token' in resp.text:
                 logger.success(f"{i}) Got session token")
                 return resp.json()['token']
