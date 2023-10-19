@@ -6,7 +6,7 @@ MAX_SLEEP = 40
 MOBILE_PROXY = 'login:pass@ip:port'
 MOBILE_CHANGE_IP_LINK = 'https://frigate-proxy.ru/ru/change_ip/....'
 
-ref = 16775158
+ref = 89919461
 
 #-------------------------------------
 
